@@ -1,0 +1,25 @@
+Gas Management System to manage the supply and distribution of gas. This system will include tracking gas cylinders, customers, suppliers, orders, and deliveries. Here's the schema design and the necessary SQL to create the database and its tables.
+
+Database Design:
+Gas Cylinders: Information about the types and details of gas cylinders.
+
+Customers: Customer details who buy or receive gas deliveries.
+
+Suppliers: Suppliers who provide gas cylinders.
+
+Orders: Tracks gas orders placed by customers.
+
+Deliveries: Details of gas deliveries associated with orders.
+
+Payments: Information about payments made for the gas orders.
+
+ERD Relationship Overview:
+Gas Cylinders to Orders: One cylinder type can be ordered many times (1:M).
+
+Customers to Orders: A customer can place many orders (1:M).
+
+Suppliers to Gas Cylinders: A supplier provides many cylinder types (1:M).
+
+Orders to Deliveries: An order can have one or more deliveries (1:M).
+
+Orders to Payments: An order can have one or more payments (1:M).
